@@ -194,6 +194,7 @@ pub fn try_generate_report(
 
 /// Wrapper function for macro hygiene
 #[doc(hidden)]
+#[must_use]
 pub fn get_timestamp() -> DateTime<Utc> {
     chrono::Utc::now()
 }
@@ -370,6 +371,7 @@ impl ProgramMetadata {
     /// use crashlog::cargo_metadata;
     /// crashlog::setup!(cargo_metadata!(default = "").capitalized(), false);
     /// ```
+    #[must_use]
     pub fn capitalized(self) -> Self {
         let mut new = self;
         let mut chars = new.package.chars();
@@ -446,6 +448,7 @@ macro_rules! cargo_metadata {
 /// This is an internal helper function and is not part of Crashlog's API.
 /// You should not use this function.
 #[doc(hidden)]
+#[must_use]
 pub fn cow_replace<'a>(s: &'a str, from: &str, to: &str) -> Cow<'a, str> {
     if s.contains(from) {
         Cow::Owned(s.replace(from, to))

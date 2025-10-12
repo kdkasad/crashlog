@@ -11,6 +11,11 @@ edition = "2021"
 rust-version = "1.85"
 exclude = ["/.github/"]
 
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+missing_panics_doc = "allow"
+too_many_lines = "allow"
+
 [dependencies]
 chrono = { version = "0.4.41", features = ["now"], default-features = false }
 fastrand = "2.3.0"
