@@ -1,9 +1,10 @@
 # Crashlog: Panic handling for humans
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/kdkasad/westwood/ci.yml?logo=github&label=CI)](https://github.com/kdkasad/westwood/actions/workflows/ci.yml)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/kdkasad/crashlog/ci.yml?logo=github&label=CI)](https://github.com/kdkasad/crashlog/actions/workflows/ci.yml)
+[![Codecov badge](https://img.shields.io/codecov/c/github/kdkasad/crashlog?logo=codecov&color=%23F01F7A)](https://app.codecov.io/gh/kdkasad/crashlog)
 [![crates.io version badge](https://img.shields.io/crates/v/crashlog)](https://crates.io/crates/crashlog)
 [![docs.rs status badge](https://img.shields.io/docsrs/crashlog)](https://docs.rs/crashlog)
-[![License badge](https://img.shields.io/crates/l/crashlog)](https://github.com/kdkasad/westwood/blob/master/LICENSE)
+[![License badge](https://img.shields.io/crates/l/crashlog)](https://github.com/kdkasad/crashlog/blob/master/LICENSE)
 
 Inspired by [human-panic](https://lib.rs/crates/human-panic), but with the following
 goals/improvements:
@@ -15,10 +16,6 @@ goals/improvements:
 - Includes timestamps in logs
 
 [serde]: https://lib.rs/crates/serde
-
-This library is a sub-project of [Westwood], and lives within Westwood's repository.
-
-[Westwood]: https://github.com/kdkasad/westwood
 
 # Example
 
@@ -88,7 +85,7 @@ This will use the latest release published on [crates.io](https://crates.io).
 For the latest development version, you can tell Cargo to install Crashlog from
 the GitHub repository:
 ```
-$ cargo add crashlog --git https://github.com/kdkasad/westwood
+$ cargo add crashlog --git https://github.com/kdkasad/crashlog
 ```
 
 # Usage
