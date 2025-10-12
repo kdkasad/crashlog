@@ -9,6 +9,7 @@ run-name: |
   }}
 
 on:
+  workflow_call: {}
   push: {}
   pull_request:
     branches:
