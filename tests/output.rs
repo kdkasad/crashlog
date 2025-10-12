@@ -30,7 +30,7 @@ test!(
     test_default_append,
     "",
     "
-thread 'main' panicked at crashlog/src/bin/crashlog_test_subject.rs:33:5:
+thread 'main' panicked at src/bin/crashlog_test_subject.rs:33:5:
 Boo!
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -45,7 +45,7 @@ To help us figure out why this happened, please report this crash.
 Either open a new issue on GitHub [1] or send an email to the author(s) [2].
 Attach the file listed above or copy and paste its contents into the report.
 
-[1]: https://github.com/kdkasad/westwood/issues/new
+[1]: https://github.com/kdkasad/crashlog/issues/new
 [2]: Kian Kasad <kian@kasad.com>
 
 For your privacy, we don't automatically collect any information, so we rely on
@@ -66,7 +66,7 @@ To help us figure out why this happened, please report this crash.
 Either open a new issue on GitHub [1] or send an email to the author(s) [2].
 Attach the file listed above or copy and paste its contents into the report.
 
-[1]: https://github.com/kdkasad/westwood/issues/new
+[1]: https://github.com/kdkasad/crashlog/issues/new
 [2]: Kian Kasad <kian@kasad.com>
 
 For your privacy, we don't automatically collect any information, so we rely on
@@ -78,7 +78,7 @@ test!(
     test_custom_append,
     "--custom",
     "
-thread 'main' panicked at crashlog/src/bin/crashlog_test_subject.rs:33:5:
+thread 'main' panicked at src/bin/crashlog_test_subject.rs:33:5:
 Boo!
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

@@ -2,17 +2,14 @@
 name = "crashlog"
 version = "0.1.4"
 description = "Panic handling for humans"
-homepage = "https://github.com/kdkasad/westwood/tree/master/crashlog"
+repository = "https://github.com/kdkasad/crashlog"
+authors = ["Kian Kasad <kian@kasad.com>"]
+license = "Apache-2.0"
 categories = ["rust-patterns"]
 keywords = ["panic", "crash", "report", "cli"]
-
-# Inherit these keys from workspace
-repository.workspace = true
-license.workspace = true
-authors.workspace = true
-exclude.workspace = true
-edition.workspace = true
-rust-version.workspace = true
+edition = "2021"
+rust-version = "1.85"
+exclude = ["/.github/"]
 
 [dependencies]
 chrono = { version = "0.4.41", features = ["now"], default-features = false }
