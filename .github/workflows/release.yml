@@ -9,6 +9,8 @@ jobs:
   ci:
     name: Run CI checks
     permissions:
+      checks: write
+      pull-requests: write
       id-token: write
       contents: read
       attestations: write
