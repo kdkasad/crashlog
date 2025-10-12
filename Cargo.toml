@@ -1,6 +1,6 @@
 [package]
 name = "crashlog"
-version = "0.1.4"
+version = "0.1.5"
 description = "Panic handling for humans"
 repository = "https://github.com/kdkasad/crashlog"
 authors = ["Kian Kasad <kian@kasad.com>"]
